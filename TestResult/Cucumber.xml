@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="6" time="140.213">
+    <testcase classname="Login" name="Verification of Text Input field" time="17.851">
+        <system-out><![CDATA[Given first user launch the browser.........................................passed
+And enduser launch portal "http://www.uitestingplayground.com/".............passed
+When enduser click on "Text Input" link.....................................passed
+And click on on the textbox and insert text as "ABC"........................passed
+And click on the button.....................................................passed
+Then Verify the provide test in textbox and the name of button is same......passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Login" name="Verification of Sample App field" time="11.974">
+        <system-out><![CDATA[Given first user launch the browser.........................................passed
+And enduser launch portal "http://www.uitestingplayground.com/".............passed
+When enduser click on "Sample App" link.....................................passed
+And User enter the userID as "ABC"..........................................passed
+And User enter the password as "pwd"........................................passed
+Then click on the login button..............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Login" name="Verification of Click field" time="12.765">
+        <system-out><![CDATA[Given first user launch the browser.........................................passed
+And enduser launch portal "http://www.uitestingplayground.com/".............passed
+When enduser click on "Click" link..........................................passed
+Then click on button........................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Login" name="Verification of Load Delay field" time="23.16">
+        <system-out><![CDATA[Given first user launch the browser.........................................passed
+And enduser launch portal "http://www.uitestingplayground.com/".............passed
+When enduser click on "Load Delay" link.....................................passed
+And wait until the button get visible and click on it.......................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Login" name="Verification of Mouse Over field" time="28.376">
+        <system-out><![CDATA[Given first user launch the browser.........................................passed
+And enduser launch portal "http://www.uitestingplayground.com/".............passed
+When enduser click on "Mouse Over" link.....................................passed
+Then make the 2 click on the provided link and check the click count........passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Login" name="Verification of Scrollbars field" time="45.87">
+        <system-out><![CDATA[Given first user launch the browser.........................................passed
+And enduser launch portal "http://www.uitestingplayground.com/".............passed
+When enduser click on "Scrollbars" link.....................................passed
+Then scroll to the button...................................................passed
+And click the scrolling button..............................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
