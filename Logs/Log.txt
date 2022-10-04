@@ -13,7 +13,7 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Tue, 04 Oct 2022 07:54:25 GMT
+Date: Tue, 04 Oct 2022 08:02:48 GMT
 Content-Type: text/html
 Content-Length: 327
 Connection: keep-alive
@@ -22,7 +22,7 @@ Last-Modified: Thu, 29 Sep 2022 17:30:34 GMT
 Vary: Accept-Encoding
 ETag: "6335d63a-147"
 Content-Encoding: gzip
-Expires: Wed, 05 Oct 2022 07:54:25 GMT
+Expires: Wed, 05 Oct 2022 08:02:48 GMT
 Cache-Control: max-age=86400
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: GET, POST, OPTIONS
@@ -67,7 +67,7 @@ Body:
   "userStatus": 0
 }'
 HTTP/1.1 200 OK
-Date: Tue, 04 Oct 2022 07:54:27 GMT
+Date: Tue, 04 Oct 2022 08:02:50 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -79,7 +79,7 @@ Server: Jetty(9.2.9.v20150224)
 {
     "code": 200,
     "type": "unknown",
-    "message": "6874990303"
+    "message": "9223372036854775807"
 }
 ------------------------------
 Request method:	POST
@@ -113,7 +113,7 @@ Body:
     "status": "available"
 }
 HTTP/1.1 200 OK
-Date: Tue, 04 Oct 2022 07:54:28 GMT
+Date: Tue, 04 Oct 2022 08:02:50 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -162,7 +162,7 @@ Body:
     "complete": true
 }
 HTTP/1.1 200 OK
-Date: Tue, 04 Oct 2022 07:54:28 GMT
+Date: Tue, 04 Oct 2022 08:02:51 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -195,7 +195,7 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Tue, 04 Oct 2022 07:54:30 GMT
+Date: Tue, 04 Oct 2022 08:02:53 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -226,7 +226,7 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Tue, 04 Oct 2022 07:54:31 GMT
+Date: Tue, 04 Oct 2022 08:02:53 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -242,11 +242,11 @@ Server: Jetty(9.2.9.v20150224)
 }
 ------------------------------
 PASSED: placeOrderRequest
-PASSED: petCreationRequest
-PASSED: logout
 PASSED: loginRequest
 PASSED: userCreationRequest
 PASSED: getOrderRequest
+PASSED: petCreationRequest
+PASSED: logout
 
 ===============================================
     Default test
