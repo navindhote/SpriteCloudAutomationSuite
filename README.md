@@ -1,10 +1,10 @@
-# SpriteCloudAutomationSuite
-
-                                                  *************** SpriteCloudUIAutomation Suite **************
+SpriteCloudUIAutomation Suite - UI Testing Automation Module
+PetStoreTestSuite - Testing the REST API's of Pet Store
 
 
 ***** Introduction *****
 
+SpriteCloudUIAutomation Suite 
 
 The application SpriteCloudUIAutomation for Web UI Testing has been implemented using Java + Cucumber Framework. The main purpose on introducing Cucumber Framework is because we have followed the BDD i.e. Behaviour Driven Development Methodology during the requirement, analysis and code implementation for the problem statement. 
 
@@ -14,7 +14,11 @@ Our Behaviour Driven Development Principle is based on 3 things :-
  - When -> What are you actually ging to perform ( click, enter text etc)
  - Then -> Verfication part after the action
 
+PetStoreTestSuite
 
+The application PetStoreTestSuite is a REST Assured application based on JUnit which uniquely test available REST API's in the Pet Store. The main implementation here in REST API's is Data Driven framework Development. Can be done in REST-assured as it is a Java client. But can't be done in Postman. Designing a Data-Driven framework: For Postman automation runner we can provide only with one data file for each collection. But for REST-assured there is no limitation for this.
+
+REST Assured removes the need for writing a lot of boilerplate code required to set up an HTTP connection, send a request and receive and parse a response. It supports a Given/When/Then test notation, which instantly makes your tests human readable. This also additional advantage on the grounds of future development and enhancement as well.
 
 ***** Requirements *****
 
@@ -31,7 +35,15 @@ In the Web UI Testing Suite, we have implementation for below 6 different types 
 - Verification of Visibility field
 - Verification of Scrollbars field
 
+For the Testing of REST API's available in the Pet Store, we have collected below scenarios for Endpoint URI's consumption and TEST :-
 
+- Create a User - https://petstore.swagger.io/v2/user
+- Login via User - https://petstore.swagger.io/v2/user/login?username=Username&password=Password
+- Create a Pet - https://petstore.swagger.io/v2/pet/addPet
+- Get a Pet by Id - https://petstore.swagger.io/v2/pet/pet_id
+- Create a Store Order - https://petstore.swagger.io/v2/store/order
+- Get a Store Order - https://petstore.swagger.io/v2/store/order/1
+- Logout the User - https://petstore.swagger.io/v2/user/logout
 
 
 ***** Installation *****
@@ -42,9 +54,14 @@ The project files and structure is located at the below repository :-
 
 https://github.com/navindhote/SpriteCloudAutomationSuite
 
-Take a fresh checkout of the project on the local machine and import it on Eclipse or any required IDE of your choice.
+Take a fresh checkout of the projects on the local machine and import it on Eclipse or any required IDE of your choice.
 
+Both the Modules must be imported as existing Maven Projects. Required Dependencies are already added.
 
+Run the below Files as a JUnit Test.
+
+SpriteCloudUIAutomation Suite - Lprunner.java
+PetStoreTestSuite - PetStoreRest.java
 
 ***** Configuration *****
 
@@ -88,6 +105,8 @@ All the reports for Test Run are stored in below location :-
 
 Each time the Test Case is run the new report gets generated.
 
+/PetStoreAutomationSuite/test-output/testng-results.xml
+/PetStoreAutomationSuite/test-output/testng-failed.xml
 
 
 ***** Run the Test in CICD pipeline *****
@@ -114,7 +133,8 @@ Each time the Test Case is run the new report gets generated.
 
 - Click on Run button to start the the CI CD process.
 
-- After successful build open chrome and hit the url - file:///C:/Study/Study_Workspace/SpriteCloudUIAutomation/target/cucumber-reports/report.html. It will run the application. 
+- After successful build open chrome and hit the url - file:///C:/Study/Study_Workspace/SpriteCloudUIAutomation/target/cucumber-reports/report.html.
+- file:///C:/Study/Study_Workspace/PetStoreAutomationSuite/test-output/emailable-report.html It will run the application. 
 
 NOTE - The URL path is the Path to your reports file - file:///C:/Study/Study_Workspace/SpriteCloudUIAutomation/ varies from machine to machine and location selection. Should be modified accordingly.
 
@@ -163,4 +183,3 @@ Test Report
 - The Report must be available to user for downloading in various formats such as HTML, JSON, XML, Excel, PDF etc.
 
 - A PDF File containing all the test cases and screenshots as well.
-
